@@ -1,20 +1,23 @@
 import React from "react";
 import { Divnavbar } from "./divnavbar.jsx";
 import { Divjumbo } from "./divjumbo.jsx";
-import { Divcard } from "./divcard.jsx";
 import { Divfooter } from "./divfooter.jsx";
+import { Divcard } from "./divcard.jsx";
+import "../../styles/index.css";
 
-//include images into your bundle
-//import rigoImage from "../../img/rigo-baby.jpg";
-
-//create your first component
 const Home = () => {
 	return (
-		<div>
+		<div className="container-fluid m-0 p-0">
 			<Divnavbar />
-			<Divjumbo />
-			<Divcard />
-			<Divfooter />
+			<div className="container">
+				<Divjumbo />
+			</div>
+			<div className="container">
+				<Divcard />
+			</div>
+			<div className="container-fluid m-0 p-0">
+				<Divfooter />
+			</div>
 		</div>
 	);
 };
